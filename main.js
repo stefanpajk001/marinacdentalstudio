@@ -78,7 +78,7 @@
   // Recenzije – strelice
   var rvTrack = document.querySelector('.rv-track');
   if (rvTrack) {
-    var rvPrev = document.querySelector('.rv-prev'), rvNext = document.querySelector('.rv-next');
+    var rvPrev = document.querySelector('.rv-nav .rv-prev'), rvNext = document.querySelector('.rv-nav .rv-next');
     var rvStep = function () { var c = rvTrack.querySelector('.rv-card'); return c ? c.getBoundingClientRect().width + parseFloat(getComputedStyle(rvTrack).columnGap || 24) : 300; };
     var rvUpd = function () {
       var max = rvTrack.scrollWidth - rvTrack.clientWidth - 4;
